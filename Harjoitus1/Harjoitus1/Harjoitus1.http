@@ -1,0 +1,34 @@
+﻿@Harjoitus1_HostAddress = https://localhost:7042
+
+POST {{Harjoitus1_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"feed fish",
+  "isComplete":true
+}
+
+###
+
+GET {{Harjoitus1_HostAddress}}/todoitems
+
+###
+
+@id=1
+GET {{Harjoitus1_HostAddress}}/todoitems/{{id}}
+
+###
+
+PUT {{Harjoitus1_HostAddress}}/todoitems/{{id}}
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+
+###
+
+DELETE {{Harjoitus1_HostAddress}}/todoitems/{{id}}
+
+###
