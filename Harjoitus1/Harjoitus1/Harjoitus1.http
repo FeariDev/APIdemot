@@ -14,12 +14,11 @@ GET {{Harjoitus1_HostAddress}}/todoitems
 
 ###
 
-@id=1
-GET {{Harjoitus1_HostAddress}}/todoitems/{{id}}
+GET {{Harjoitus1_HostAddress}}/todoitems/1
 
 ###
 
-PUT {{Harjoitus1_HostAddress}}/todoitems/{{id}}
+PUT {{Harjoitus1_HostAddress}}/todoitems/1
 Content-Type: application/json
 
 {
@@ -29,6 +28,15 @@ Content-Type: application/json
 
 ###
 
-DELETE {{Harjoitus1_HostAddress}}/todoitems/{{id}}
+DELETE {{Harjoitus1_HostAddress}}/todoitems/1
+
+###
+
+POST {{Harjoitus1_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  //Todo
+}
 
 ###
